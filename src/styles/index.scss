@@ -1,0 +1,18 @@
+@charset "UTF-8";
+@import "./colors";
+
+body {
+  background-color: $color-white;
+  color: $color-black;
+  font-family: Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  line-height: 1.42857;
+  font-size: 14px;
+
+  * {
+    outline: none;
+  }
+}

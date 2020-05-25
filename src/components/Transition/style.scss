@@ -1,0 +1,23 @@
+.fade{
+  &-enter {
+    opacity: 0.5;
+    transform: translateY(-10px);
+  }
+
+  &-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 300ms ease;
+  }
+
+  &-exit {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  &-exit-active {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 300ms ease;
+  }
+}

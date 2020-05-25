@@ -1,0 +1,64 @@
+@import "../../styles/colors";
+
+.dropdown-wrapper {
+  width: 100%;
+  position: relative;
+
+  .selected-box {
+    min-height: 50px;
+    background-color: $color-grey-light;
+    line-height: 50px;
+    border-radius: 16px;
+    padding: 0 10px;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
+    min-width: 200px;
+
+    img{
+      width: 30px;
+      height: 30px;
+      right: 10px;
+      position: absolute;
+      top: 10px;
+    }
+
+    .icon-dropdown {
+      img{
+        transform: rotate(0deg);
+        transition: all 400ms ease;
+      }
+
+      &.open {
+
+        img{
+          transform: rotate(180deg);
+          transition: all 400ms ease;
+        }
+      }
+    }
+  }
+
+  .list-items {
+    background-color: #ffffff;
+    margin: 5px 0;
+    z-index: 2;
+    box-shadow: 0 3px 10px 0 rgba(34, 36, 38, 0.15);
+    color: $color-grey-dark3;
+    user-select: none;
+    position: absolute;
+    width: calc(100% - 1px);
+    max-height: 180px;
+    overflow-y: scroll;
+    border-radius: 16px;
+
+    .item {
+      padding: 12px 5px;
+
+      &.selected {
+        background-color: $color-blue-3;
+        color: $color-white;
+      }
+    }
+  }
+}

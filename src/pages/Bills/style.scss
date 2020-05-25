@@ -1,0 +1,71 @@
+@import "../../styles/colors";
+
+.home {
+  max-width: 1024px;
+  overflow-y: scroll;
+  padding: 10px;
+  scroll-behavior: smooth;
+  margin: 0 auto;
+
+  .header {
+    display: none;
+    height: 50px;
+    background-color: #666666;
+  }
+
+  .edit-container {
+
+    .input-box {
+      margin-left: 12px;
+      margin-bottom: 10px;
+      border: 1px solid lightgray;
+      height: 26px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+    .action-btn {
+      border: 1px solid lightgray;
+      height: 30px;
+      border-radius: 8px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+  }
+
+  .bill-container {
+    span {
+      color: $color-blue-1;
+      font-weight: 600;
+    }
+    button {
+      border-radius: 8px;
+      cursor: pointer;
+      background-color: white;
+    }
+  }
+
+  .add-new {
+    margin-left: 20px;
+
+    button {
+      height: 50px;
+      border-radius: 16px;
+      cursor: pointer;
+      font-size: 16px;
+      transition-duration: 0.2s;
+    }
+    button:hover {
+      background-color: #8bc63f;
+      color: white;
+    }
+
+    input{
+      height: 50px;
+      border-radius: 18px;
+      cursor: pointer;
+      font-size: 16px;
+      border: 1px solid lightgray;
+      padding: 0 10px;
+    }
+  }
+}
